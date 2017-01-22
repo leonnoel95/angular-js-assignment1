@@ -15,19 +15,24 @@ function LunchController($scope) {
 //      console.log( $scope.lunchmenu);
       var stringsplit = $scope.lunchmenu.split(',');
 //      console.log(stringsplit.length);
-      if (stringsplit== "")
-      {
-        $scope.message="Please enter data first";
-      }
-      else if (stringsplit.length <4)
-       {
-          $scope.message="Enjoy!";
-      }
-      else
-       {
-          $scope.message="Too much!";
-      }
-//       console.log($scope.message) ;
+
+};
+$scope.calculate = function () {
+  var stringsplit = $scope.lunchmenu.split(',');
+//      console.log(stringsplit.length);
+  if (stringsplit== "")
+  {
+    $scope.message="Please enter data first";
+  }
+  else if (stringsplit.length <4)
+   {
+      $scope.message="Enjoy!";
+  }
+  else
+   {
+      $scope.message="Too much!";
+  }
+       console.log($scope.message) ;
 };
 
 }

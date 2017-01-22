@@ -19,10 +19,9 @@
                ng-blur="traitementmenu()"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
-<!             {{message}} >
-         </div>
+        </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="calculate()">Check If Too Much</button>
          </div>
          <div class="form-group message">
             {{message}}
